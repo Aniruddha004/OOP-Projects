@@ -1,0 +1,6 @@
+19:30:06 **** Incremental Build of configuration Debug for project calculator ass1 ****
+make all 
+make: Nothing to be done for `all'.
+
+19:30:06 Build Finished (took 60ms)
+

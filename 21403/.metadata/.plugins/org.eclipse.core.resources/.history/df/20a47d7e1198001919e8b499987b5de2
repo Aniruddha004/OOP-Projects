@@ -1,0 +1,48 @@
+//============================================================================
+// Name        : armstrong.cpp
+// Author      : 21403
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+int n;
+cout<<"Enter number:"<<endl;
+cin>>n;
+int i,z,y,count=10,temp=0,sum=0;;
+z=n;
+for(i=1;i;i++)
+{
+z=z/count;
+temp++;
+if(z==0)
+	break;
+
+}
+y=n;
+z=n;
+for(i=1;i;i++)
+{
+z=z%count;
+sum=sum+pow(z,temp);
+y=y/count;
+z=y;
+if(y==0)
+	break;
+
+}
+if(sum==n)
+	cout<<"Entered number is armstrong number";
+	else
+		cout<<"Entered number is not a armstrong number"
+
+
+
+
+	return 0;
+}

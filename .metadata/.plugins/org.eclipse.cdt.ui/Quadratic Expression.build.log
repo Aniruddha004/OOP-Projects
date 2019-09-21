@@ -1,0 +1,15 @@
+18:25:01 **** Incremental Build of configuration Debug for project Quadratic Expression ****
+make all 
+Building file: ../src/Quadratic Expression.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Quadratic Expression.d" -MT"src/Quadratic\ Expression.d" -o "src/Quadratic Expression.o" "../src/Quadratic Expression.cpp"
+Finished building: ../src/Quadratic Expression.cpp
+ 
+Building target: Quadratic Expression
+Invoking: GCC C++ Linker
+g++  -o "Quadratic Expression"  ./src/Quadratic\ Expression.o   
+Finished building target: Quadratic Expression
+ 
+
+18:25:01 Build Finished (took 209ms)
+

@@ -1,0 +1,29 @@
+//============================================================================
+// Name        : SelectionSort.cpp
+// Author      : 21405
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+template <class T>
+T sort(T ar, T n)
+{int temp=0;
+	for (int i=0 ; i<n; i++)
+	{
+		for(int j= 0; j<n; j++)
+		{
+			temp=ar[i];
+			ar[j] = ar[i];
+			ar[i]=temp
+		}
+	}
+}
+
+int main() {
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	return 0;
+}

@@ -1,0 +1,48 @@
+//============================================================================
+// Name        : calculator.cpp
+// Author      : 21403
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+int main() {
+float a,b;
+char z;
+
+ for(int i=1;i;i++)
+ {
+	 cout<<"Enter first number, operator, second number:"<<endl;
+	 cin>>a>>z>>b;
+	 if(z=='+')
+	 {
+		 a=a+b;
+		 cout<<"Ans is:"<<a<<endl;
+	 }
+	 else if(z=='-')
+	 {
+		 a=a-b;
+		 cout<<"Ans is:"<<a<<endl;
+	 }
+	 else if(z=='*')
+	 {
+		 a=a*b;
+		 cout<<"Ans is:"<<a<<endl;
+	 }
+	 else
+	 {
+		 a=a/b;
+		 cout<<"Ans is:"<<a<<endl;
+	 }
+	 cout<<"Do another (y/n)?"
+			 cin>>z;
+	 if(z=='y')
+		 continue;
+	 else
+		 break;
+ }
+	return 0;
+}

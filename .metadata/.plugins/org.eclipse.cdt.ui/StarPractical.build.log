@@ -1,0 +1,15 @@
+19:33:46 **** Incremental Build of configuration Debug for project StarPractical ****
+make all 
+Building file: ../src/StarPractical.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/StarPractical.d" -MT"src/StarPractical.d" -o "src/StarPractical.o" "../src/StarPractical.cpp"
+Finished building: ../src/StarPractical.cpp
+ 
+Building target: StarPractical
+Invoking: GCC C++ Linker
+g++  -o "StarPractical"  ./src/StarPractical.o   
+Finished building target: StarPractical
+ 
+
+19:33:46 Build Finished (took 161ms)
+

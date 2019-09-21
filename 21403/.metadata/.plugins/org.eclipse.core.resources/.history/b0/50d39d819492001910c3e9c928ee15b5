@@ -1,0 +1,103 @@
+//============================================================================
+// Name        : calculator.cpp
+// Author      : 21403
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <math.h>
+#define pi 3.14;
+using namespace std;
+void fun()
+{
+	char t;
+    float angle;
+    int i;
+	do{
+		cout<<"Enter angle in degree"<<endl;
+		cin>>angle;
+         angle=angle*pi/180;
+		cout<<"1.sin"<<endl<<"2.cos"<<endl<<"3.tan"<<endl<<"4.Convert in radian"<<endl;
+		cin>>i;
+		switch(i)
+		{
+		case 1:
+			angle=sin(angle);
+			cout<<"Answer is:"<<angle<<endl;
+			break;
+		case 2:
+					angle=cos(angle);
+					cout<<"Answer is:"<<angle<<endl;
+					break;
+		case 3:
+					angle=tan(angle);
+					cout<<"Answer is:"<<angle<<endl;
+					break;
+		case 4:
+			cout<<"Answer is"<<angle<<endl;
+			break;
+
+		}
+		cout<<"Do again (y/n):";
+		cin>>t;
+
+	}while(t!='n');
+}
+int main() {
+float a,b;
+char z;
+char x;
+
+ do{
+	 cout<<"Enter first number, operator, second number:"<<endl;
+	 cin>>a>>z>>b;
+	 switch(z)
+	 {
+	 case '+':
+		 a=a+b;
+		 cout<<"Answer is:"<<a<<endl;
+		 break;
+
+	 case '-':
+
+		 a=a-b;
+		 cout<<"Answer is:"<<a<<endl;
+		 break;
+
+	 case '*':
+		 a=a*b;
+		 cout<<"Answer is:"<<a<<endl;
+		 break;
+
+	 case '/':
+
+		 a=a/b;
+		 if(b==0)
+		 {
+			 cout<<"Error"<<endl;
+		 }
+		 cout<<"Answer is:"<<a<<endl;
+		 break;
+	 default:
+		 cout<<"You have entered wrong choice"<<endl;
+
+	 }
+	 cout<<"Do another (y/n)?";
+			 cin>>z;
+
+ }while(z!='n');
+ if(z=='n')
+ {
+	 cout<<"Want trigonometric functions(y/n):";
+	 cin>>x;
+	 if(x=='y')
+	 {
+	fun();
+	}
+	 else
+		 return 0;
+ }
+	return 0;
+}

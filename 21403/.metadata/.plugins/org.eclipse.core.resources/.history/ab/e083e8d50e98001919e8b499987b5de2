@@ -1,0 +1,45 @@
+//============================================================================
+// Name        : operator.cpp
+// Author      : 21403
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+class Distance
+{
+	int meter;
+public:
+	Distance()
+{
+		meter=0;
+}
+	Distance(int m)
+	{
+		meter=m;
+	}
+	void getdata()
+	{
+		cin>>meter;
+	}
+	Distance add(Distance m)
+	{
+		return Distance(meter+m.meter);
+	}
+	void display()
+	{
+		cout<<meter;
+	}
+};
+
+int main() {
+	Distance d1,d2,d3;
+	d1.getdata();
+	d2.getdata();
+	d3=d2.add(d1);
+	d3.display();
+
+	return 0;
+}

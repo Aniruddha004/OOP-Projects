@@ -1,0 +1,15 @@
+18:13:31 **** Incremental Build of configuration Debug for project Operator Overloading ****
+make all 
+Building file: ../src/Operator Overloading.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Operator Overloading.d" -MT"src/Operator\ Overloading.d" -o "src/Operator Overloading.o" "../src/Operator Overloading.cpp"
+Finished building: ../src/Operator Overloading.cpp
+ 
+Building target: Operator Overloading
+Invoking: GCC C++ Linker
+g++  -o "Operator Overloading"  ./src/Operator\ Overloading.o   
+Finished building target: Operator Overloading
+ 
+
+18:13:31 Build Finished (took 208ms)
+

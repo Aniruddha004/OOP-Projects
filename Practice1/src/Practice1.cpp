@@ -1,0 +1,44 @@
+//============================================================================
+// Name        : Practice1.cpp
+// Author      : 21405
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+class Distance
+{
+  int meter;
+public:
+  Distance (){
+	  meter=0;
+  }
+  Distance (int m)
+  {
+	  meter= m;
+  }
+  void getdata ()
+  {
+	  cin>>meter;
+  }
+Distance operator + (Distance m)
+{
+     return Distance (meter + m.meter);
+}
+void display()
+{
+cout<<meter;
+}
+};
+
+int main() {
+	Distance d1,d2,d3;
+	d1.getdata();
+	d2.getdata();
+	d3=d1+d2;
+	d3.display();
+	return 0;
+}

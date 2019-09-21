@@ -1,0 +1,90 @@
+//============================================================================
+// Name        : complex.cpp
+// Author      : 21403
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+#include <iostream>
+using namespace std;
+class complex
+{
+	double r,i;
+public:
+complex()
+{
+	r=0;
+	i=0;
+}
+void getdata()
+{
+	cout<<"Enter real and imaginary part of complex number:";
+	cin>>r>>i;
+}
+void putdata()
+		{
+	cout<<r<<"+"<<i<<"i"<<endl;
+		}
+complex operator +(complex m)
+{
+	return complex(r+m.r,i+m.i);
+
+}
+complex operator -(complex m)
+{
+	return complex(r-m.r,i-m.i);
+
+}
+complex operator *(complex m)
+{
+	return complex(r*m.r-i*m.i,r*m.i+i*m.r);
+
+}
+complex operator /(complex m)
+{
+	return complex(((r*m.r)+(i*m.i))/((m.r*m.r)+(m.i*m.i)),((i*m.r)-(r*m.i))/((m.r*m.r)+(m.i*m.i)));
+
+}
+complex(double k,double j)
+{
+	r=k;
+	i=j;
+}
+};
+
+int main() {
+complex s1,s2,s3;
+s1.getdata();
+s2.getdata();
+int i;
+for(int j=1;j;j++)
+{
+	cout<<endl;
+cout<<"Enter your choice:"<<endl;
+cout<<"1.Addition"<<endl<<"2.Subtraction"<<endl<<"3.Multiplication"<<endl<<"4.Division"<<endl<<"5.Exit"<<endl;
+cin>>i;
+if(i==5)
+	break;
+switch(i){
+case 1:
+	s3=s1+s2;
+	s3.putdata();
+	break;
+case 2:
+	s3=s1-s2;
+	s3.putdata();
+	break;
+case 3:
+	s3=s1*s2;
+	s3.putdata();
+	break;
+case 4:
+	s3=s1/s2;
+	s3.putdata();
+
+
+}
+}
+
+return 0;
+}

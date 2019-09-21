@@ -1,0 +1,48 @@
+//============================================================================
+// Name        : complex.cpp
+// Author      : 21403
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+class complex
+{
+	int r,i;
+public:
+complex()
+{
+	r=0;
+	i=0;
+}
+void getdata()
+{
+	cin>>r>>i;
+}
+void putdata()
+		{
+	cout<<r<<endl<<i;
+		}
+complex operator +(complex m)
+{
+	return complex(r+m.r,i+m.i);
+
+}
+complex(int k,int j)
+{
+	r=k;
+	i=j;
+}
+};
+
+int main() {
+complex s1,s2,s3;
+s1.getdata();
+s2.getdata();
+s3=s1+s2;
+s3.putdata();
+
+	return 0;
+}
